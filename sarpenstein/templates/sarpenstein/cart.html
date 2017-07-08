@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <title>Sarpenstein : The Global Tech Store</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+
+  
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #000000;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #000000 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  
+  
+  
+
+.shop_table_cart{
+	
+	color:blue;
+	background-color:#696969;
+	text-align:center;
+	
+}
+.button, .checkout-button_button_alt_wc-forward{
+	
+	background-color:#37A69B;
+}
+.form{
+	padding-top:20px;
+	padding-left:410px;
+}
+
+
+		body {
+					font-family: Roboto, Lato, "Open Sans", "Calibri Light", sans-serif
+				}
+
+				/* <main> */
+				main {
+					background-color: #DFDFDF;
+					border-radius: 6px;
+					display: flex;
+					margin: 80px auto;
+					padding: 20px;
+					width: 90%
+				}
+
+			/* Assets */
+				/* Button */
+				.button {
+					background-color: #37A69B;
+					border: 0;
+					border-radius: 6px;
+					box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .4);
+					color: #FFFFFF;
+					display: inline-block;
+					font-size: 17px;
+					margin: 10px auto;
+					padding: 7.5px 10px;
+					text-align: center;
+					width: 200px	
+				}
+
+				
+
+				/* Field */
+				.field {
+					display: inline-block
+				}
+					/* Label */
+					.field > label {
+						display: block;
+						font-size: 75%;
+						margin: 10px 0;
+						opacity: .75
+					}
+
+					/* Input */
+					.field > input {
+						border: 1px solid #CFCFCF;
+						border-radius: 6px;
+						font-size: 100%;
+						margin: 0 10px;
+						padding: 2.5px 5px;
+						width: 90%
+					}
+
+			/* Components */
+				/* Table */
+				#table {
+					flex-basis: 66.6%;
+					flex-grow: 2;
+					z-index: 4
+				}
+					/* Product */
+					#table > .product {
+						background-color: #FFFFFF;
+						box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .3);
+						display: flex;
+						margin: 10px;
+						padding: 10px;
+						user-select: none
+					}
+						/* Image */
+						#table > .product > .image {
+							align-items: center;
+							display: flex;
+							flex-basis: 200px;
+							margin-right: 10px;
+							justify-content: center;
+							outline: 1px solid #CFCFCF
+						}
+							/* Content */
+							#table > .product > .image > img {
+								color: #787878;
+								height: auto;
+								margin: 0 auto;
+								text-align: center;
+								width: 85%
+							}
+
+						/* Details */
+						#table > .product > .details {
+							flex-grow: 1
+						}
+							/* Name */
+							#table > .product > .details > .name {
+								font-size: 32.5px;
+								font-weight: 300;
+								margin: 10px 0 25px 0
+							}
+
+							/* Price */
+							#table > .product > .details > .price {
+								color: #37A69B;
+								font-size: 40px;
+								font-weight: 500;
+								margin: 0;
+								opacity: .75;
+								text-align: right;
+								transform: translateX(-30px);
+								width: 100%
+							}
+
+				/* Cart */
+				#cart {
+					background-color: #FFFFFF;
+					border-radius: 6px;
+					box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+					flex-basis: 33.3%;
+					flex-direction: column;
+					flex-grow: 1;
+					padding: 10px;
+					z-index: 4
+				}
+					/* Empty Cart */
+					#cart > .total {
+						color: #9F9F9F;
+						font-size: 50px;
+						margin: 10px 5px
+					}
+
+					/* Buy */
+					#cart > .buttons {
+						align-items: center;
+						display: flex;
+						flex-grow: 1;
+						justify-content: center;
+						width: 100%
+					}
+						/* Content */
+						#cart > .buttons > * {
+							background-color: #37A69B;
+							border: 0;
+							border-radius: 4px;
+							box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .3);
+							color: #FFFFFF;
+							cursor: pointer;
+							flex-basis: 33.3%;
+							font-size: 20px;
+							margin: 0 auto;
+							padding: 7.5px 0;
+							overflow: hidden;
+							text-align: center;
+							transform: translateY(50px);
+							white-space: pre
+						}
+
+			/* Payment */
+			#payment {
+				background-color: #FFFFFF;
+				box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
+				display: none;
+				left: 25%;
+				margin: 5px auto;
+				outline: 5000px solid rgba(0, 0, 0, .675);
+				padding: 25px;
+				position: fixed;
+				right: 25%;
+				width: 50%;
+				z-index: 5
+			}
+				/* Content */
+				#payment > * {
+					margin-left: auto;
+					margin-right: auto
+			 	}
+
+
+
+
+  </style>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="{% url 'sarpenstein:index' %}">Sarpenstein</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">HOME</a></li>
+        <li><a href = "sarpenstein : search">SEARCH</a></li>
+        <li><a href="#services">BEST DEALS!</a></li>
+        <li><a href="sarpenstein : index">CART</a></li>
+        <li><a href="/home/agozie/market/sarpenstein/templates/sarpenstein/samsungnew.html">DEVICES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+<main>
+		<!-- Payment -->
+		<div id="payment">
+			<!-- Name -->
+			<div class="field" style="width: 30%">
+				<!-- Label -->
+				<label for="name"> Name </label>
+
+				<!-- Input -->
+				<input id="name" placeholder="    Name " type="text">
+			</div>
+
+			<!-- Billing Address -->
+			<div class="field" style="width: 60%">
+				<!-- Label -->
+				<label for="billingAddress"> Billing Address </label>
+
+				<!-- Input -->
+				<input id="billingAddress" placeholder="    Billing Address " type="text">
+			</div>
+				
+		
+
+			<!-- Pay on Delivery -->
+			<button class="button"> Pay on Delivery </button>
+
+			<!-- Online Payment -->
+			<button class="button"> Online Payment </button>
+
+			<!-- Master Card -->
+			<div>
+				<!-- Label -->
+				<label for="masterCard"> Master Card </label>
+
+				<!-- Input -->
+				<input id="masterCard" type="checkbox">
+			</div>
+
+			<!-- Visa Card -->
+			<div>
+				<!-- Label -->
+				<label for="visaCard"> Visa Card </label>
+
+				<!-- Input -->
+				<input id="visaCard" type="checkbox">
+			</div>
+
+			<!-- Card Number -->
+			<div class="field" style="width: 30%">
+				<!-- Label -->
+				<label for="cardNumber"> Card Number </label>
+
+				<!-- Input -->
+				<input id="cardNumber" placeholder="    Card Number " type="text">
+			</div>
+
+			<!-- Validity Date -->
+			<div class="field" style="width: 30%">
+				<!-- Label -->
+				<label for="validityDate"> Validity Date </label>
+
+				<!-- Input -->
+				<input id="validityDate" placeholder="    Validity Date " type="text">
+			</div>
+
+			<!-- CVV2 Date -->
+			<div class="field" style="width: 30%">
+				<!-- Label -->
+				<label for="cvv2"> CVV2 Date </label>
+
+				<!-- Input -->
+				<input id="cvv2" placeholder="    CVV2 Date " type="text">
+			</div>
+
+			<!-- Checkout -->
+			<button class="button" style="width: 80%"> Checkout </button>
+		</div>
+
+		<!-- Table -->
+		<section id="table">
+			<!-- Product -->
+			<div class="product">
+				<!-- Image -->
+				<div class="image">
+					<!-- Images -->
+					<img alt=" Product ">
+				</div>
+
+				<!-- Details -->
+				<div class="details">
+					<!-- Header -->
+					<!-- <h4 class="name"> [Product Name] </h4>  -->
+
+					<!-- Price -->
+					<div class="price"> [N]10,675 </div>
+				</div>
+			</div>
+
+			<!-- Product -->
+			<div class="product">
+				<!-- Image -->
+				<div class="image">
+					<!-- Images -->
+					<img alt=" Product ">
+				</div>
+
+				<!-- Details -->
+				<div class="details">
+					<!-- Header -->
+					<!-- <h4 class="name"> [Product Name] </h4>  -->
+
+					<!-- Price -->
+					<div class="price"> [N]10,675 </div>
+				</div>
+			</div>
+
+			<!-- Product -->
+			<div class="product">
+				<!-- Image -->
+				<div class="image">
+					<!-- Images -->
+					<img alt=" Product ">
+				</div>
+
+				<!-- Details -->
+				<div class="details">
+					<!-- Header -->
+					<!-- <h4 class="name"> [Product Name] </h4>  -->
+
+					<!-- Price -->
+					<div class="price"> [N]10,675 </div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Cart -->
+		<section id="cart">
+			<!-- Total -->
+			<div class="total"> [N]10,675 </div>
+
+			<!-- Buttons -->
+			<div class="buttons">
+				<!-- Empty Cart -->
+				<button id="empty"> Empty Card </button>
+
+				<!-- Buy -->
+				<button id="buy"> Buy </button>
+			</div>
+		</section>
+	</main>
+
+	<script language="javascript" type="text/javascript">
+		document.body.addEventListener(
+			"click",
+			function() {
+				if (event.target == document.querySelectorAll("#buy")[0])
+					document.querySelectorAll("#payment")[0].style.display = "block"
+
+				else if (event.target == document.querySelectorAll("#cart")[0])
+					document.querySelectorAll("#payment")[0].style.display = "none"
+			}
+		)
+	</script>
+
+                          
+
+</body>
+</html>
